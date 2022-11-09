@@ -75,7 +75,7 @@ const Meals = () => {
 			<SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			<Flex align="center">
 				<GoPrimitiveDot color="red" />
-				<Text fontSize="sm">Search meals or select categories from below.</Text>
+				<Text fontSize="sm">Nhập vào ô trên để tìm kiếm món ăn hoặc chọn những món dưới.</Text>
 			</Flex>
 			<Categories
 				categories={categories}

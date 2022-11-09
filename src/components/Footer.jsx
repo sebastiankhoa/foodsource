@@ -7,7 +7,7 @@ const Footer = () => {
 			<Box>
 				<Image alt="" src="\images\food.jpg" w="150px" />
 			</Box>
-			<Text>Find the perfect meal recipe for you</Text>
+			<Text>Tìm công thức nấu ăn hoàn hảo cho bạn</Text>
 			<Text fontSize="sm">© 2022 All right reserved.</Text>
 		</Flex>
 	);

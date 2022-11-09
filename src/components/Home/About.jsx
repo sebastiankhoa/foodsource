@@ -7,7 +7,7 @@ const About = () => {
 			<Text fontSize="2xl" fontWeight="700">
 				Food Source is a reliable food importer and distributor in Vietnam since 2016.
 			</Text>
-			<Text fontSize="2xl">
+			<Text fontSize="xl">
 				We are dedicated to sourcing premium quality food products for leading businesses within the retail and hospitality
 				industry.
 			</Text>
