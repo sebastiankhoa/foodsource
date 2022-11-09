@@ -11,7 +11,8 @@ const SaveMealPage = () => {
 	const [savedMealId, setSavedMealId] = useState([]);
 	// console.log(savedMealId);
 
-	const queries = savedMealId.map((id) => ({
+	const queries = savedMealId.map((id, _i) => ({
+		key: _i,
 		queryKey: ["singleMeal", id],
 		queryFn: getSingleMeal,
 	}));
@@ -31,7 +32,7 @@ const SaveMealPage = () => {
 			</Text>
 			{savedMealId.length <= 0 && (
 				<Center>
-					<Text>You don't have meal</Text>
+					<Text>You have no meal</Text>
 				</Center>
 			)}
 			<Flex align="center" flexWrap="wrap" gap="2" justify="center" mt="10">
@@ -39,14 +40,14 @@ const SaveMealPage = () => {
 					result.map(({ data, isLoading }, _i) => {
 						if (isLoading) {
 							return (
-								<Center>
+								<Center key={_i}>
 									<BeatLoader />
 								</Center>
 							);
 						}
 
 						return (
-							<Link href={`meals/${data?.idMeal}`} key={data?.idMeal}>
+							<Link href={`meals/${data?.idMeal}`} key={_i}>
 								<Flex
 									direction="column"
 									align="center"
